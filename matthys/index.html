@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Leo voor Matthys Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{color-scheme:light}
+/* Layout: één smalle kolom zoals een persoonlijke brief; video als hoofdstuk, rapport als tweede, afzender onderaan */
+:root{
+  --bg:#F5EAD8; --surface:#FBF4E8; --ink:#2E2A24; --muted:#6E6457; --line:#E2D3BB;
+  --accent:#D67F48; --accent-ink:#FFFFFF; --sage:#8FA073; --sage-soft:#E4E9D6;
+  --display:"Caprasimo", Georgia, serif; --body:"Figtree", system-ui, sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:40px}
+.brand{display:flex;align-items:baseline;gap:10px;color:var(--muted);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.brand b{font-family:var(--display);font-weight:400;font-size:26px;letter-spacing:0;text-transform:none;color:var(--ink)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(32px,6vw,48px);line-height:1.1;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:400;font-size:26px;margin:0}
+.lead{color:var(--muted);max-width:62ch;margin:12px 0 0}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+section{display:flex;flex-direction:column;gap:14px}
+.step{display:flex;align-items:center;gap:16px;border-top:2px solid var(--line);padding-top:24px}
+.num{flex:none;width:56px;height:56px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:var(--display);font-size:30px;line-height:56px;text-align:center}
+.steplabel{margin:0 0 2px;font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.step h2{font-size:clamp(28px,4.5vw,36px);line-height:1.15}
+video{width:100%;max-width:100%;aspect-ratio:16/9;border-radius:14px;background:#000;display:block}
+.note{font-size:14px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:12px 20px;border-radius:999px}
+.btn:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.report{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column;gap:12px}
+.report ul{margin:0;padding-left:20px}
+.pages{display:flex;flex-direction:column;gap:16px}
+.pages img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 6px 24px rgba(46,42,36,.12);background:#fff}
+.gets{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gets div{background:var(--sage-soft);border-radius:12px;padding:14px 16px;font-size:15px}
+.gets b{display:block;font-size:15px}
+.contact{border-top:1px solid var(--line);padding-top:24px;display:flex;flex-direction:column;gap:4px}
+.mail{font-weight:600;user-select:all}
+.fict{font-size:13px;color:var(--muted)}
+body{margin:0}
+</style>
+</head><body>
+<div class="wrap">
+  <div class="brand"><img src="../assets/leo-logo.png" alt="Leo, your job shepherd" width="232" height="142" style="height:72px;width:auto"></div>
+
+  <header>
+    <p class="kicker">Voor Matthys Group · Mechanisch Ontwerper / Projectingenieur</p>
+    <h1>Zo vindt Leo jullie volgende Mechanisch Ontwerper / Projectingenieur</h1>
+    <p class="lead">Een simulatie van een echt gesprek: een kandidaat praat met Leo, onze digitale recruiter, over jullie vacature in Waregem. Daarna het rapport dat jullie zouden ontvangen.</p>
+  </header>
+
+  <section aria-labelledby="h-gesprek">
+    <div class="step"><span class="num">1</span><div><p class="steplabel">Het gesprek</p><h2 id="h-gesprek">Arne praat met Leo</h2></div></div>
+    <video id="vid" controls playsinline preload="metadata" src="gesprek.mp4"></video>
+    <p class="note">Let op hoe Leo toetst hoeveel van Arnes werk nu echt nieuw ontwerp is, wat Cocreate Modeling (OneSpace Designer) is en waarom Windchill telt bij een machine die tijdens het project nog wijzigt. Duur: ongeveer 2 minuten.</p>
+  </section>
+
+  <section aria-labelledby="h-rapport">
+    <div class="step"><span class="num">2</span><div><p class="steplabel">Wat jullie ontvangen</p><h2 id="h-rapport">Het kandidatenrapport</h2></div></div>
+    <div class="report">
+      <p style="margin:0">Geen cv in bijlage, maar een rapport van drie pagina's:</p>
+      <ul>
+        <li>waarom Leo deze kandidaat voorstelt, met bewijs per eis;</li>
+        <li>wat bevestigd is en wat nog te verifiëren valt;</li>
+        <li>welke vragen jullie in het gesprek best stellen.</li>
+      </ul>
+    </div>
+    <div class="pages">
+      <img src="rapport-1.jpg" alt="Kandidatenrapport, pagina 1" width="1240" height="1754" loading="lazy">
+      <img src="rapport-2.jpg" alt="Kandidatenrapport, pagina 2" width="1240" height="1754" loading="lazy">
+      <img src="rapport-3.jpg" alt="Kandidatenrapport, pagina 3" width="1240" height="1754" loading="lazy">
+    </div>
+  </section>
+
+  <section aria-labelledby="h-krijgen">
+    <h2 id="h-krijgen">Wat jullie krijgen</h2>
+    <div class="gets">
+      <div><b>Enkel relevante kandidaten</b>Wie niet past, wordt automatisch afgewezen.</div>
+      <div><b>Geen extra werk</b>Geen afwijzingen, geen vacatures online plaatsen.</div>
+      <div><b>Betalen bij aanwerving</b>1/3e tot 1/4e van een klassieke fee, na 3 maanden.</div>
+    </div>
+  </section>
+
+  <footer class="contact">
+    <span>Vragen of interesse? Neem contact op met Gilles Moerman.</span>
+    <span class="mail">gilles@leoshepherd.be</span>
+    <p class="fict">Voorbeeld: de kandidaat en de werkgevers in deze simulatie zijn fictief.</p>
+  </footer>
+</div>
+
+</body></html>
